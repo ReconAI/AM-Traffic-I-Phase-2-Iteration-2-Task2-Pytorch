@@ -41,7 +41,7 @@
         default: 64
     inputs:
       - name: dataset
-        default: datum://01709fa6-eb64-8669-cb7a-5d818e8a1f2d
+        default: datum://0170a041-4409-5492-13cb-49e9b65bc52b
 
 - step:
     name: Worker environment check
