@@ -10,7 +10,7 @@ import dill
 
 #defaults.device = torch.device('cuda')
 
-DATA_PATH = '/valohai/inputs/dataset/dataset/'
+DATA_PATH = '/valohai/inputs/dataset/'
 MODEL_PATH = '/valohai/outputs/'
 
 # Data augmentation: create a list of flip, rotate, zoom, warp, lighting transforms...
@@ -24,8 +24,8 @@ data = ImageDataBunch.from_folder(DATA_PATH, ds_tfms=tfms, size=224, bs=64, vali
 learn = cnn_learner(data, models.resnet34, metrics=[accuracy])
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
-# Fit a model following the 1cycle policy with 15 epochs
-learn.fit_one_cycle(15)
+# Fit a model following the 1cycle policy with 50 epochs
+learn.fit_one_cycle(50)
 
 # Save the model (pytorch form .pt)
 torch.save(learn.model, MODEL_PATH+'my_model.pt', pickle_module=dill)
