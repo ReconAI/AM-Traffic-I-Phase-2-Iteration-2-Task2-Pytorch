@@ -44,7 +44,7 @@ Where:
 ## Prediction on video
 You can predict on video using *predict_video_tf.py* script:
 ```sh
-python3 predict_video_torch.py --model ./models/pytorch/road_model.pt --weights  ./models/pytorch/weights_road.pth --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road_torch/road_conditions_pie.avi --size 1
+python3 predict_video_torch.py --model ./models/pytorch/road_model.pt --weights  ./models/pytorch/weights_road.pth --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road_torch/road_conditions.avi --size 1
 ```
 Where:
 * **'model'**: the path of the training model.
