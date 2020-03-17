@@ -40,6 +40,22 @@ Where:
 * **'input'**: the path of your input images.
 * **'output'**: the path of the output images.
 * **'labels'**: the path of labels json file.
+### Results
+The predictions are displayed on images as follows:
+
+<p align="center">
+  <img src="figures/C0150409_r6_w0_2020-02-06_14-26-26.jpg">
+</p>
+
+<p align="center">
+  <img src="figures/C0150802_r1_w0_2020-02-03_08-25-46.jpg">
+</p>
+
+Predictions metrics calculated on the test dataset:
+
+<p align="center">
+  <img src="figures/class_report_torch.png">
+</p>
 
 ## Prediction on video
 You can predict on video using *predict_video_tf.py* script:
