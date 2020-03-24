@@ -4,6 +4,8 @@ Prepare and develop end-to-end pipeline (for a road condition classification lig
 As an input this model should take a video sequence from CCTV camera; As an output model should classify road condition (Dry, Moist, Wet, Wet & Salty, Frost, Snow, Ice, Probably moist/salty, Slushy).
 
 -------------------------------------------------------------------------------------------------------------------------------
+# Requirements
+To be able to install Fastai on Valohai, part of the requirements could be found in *requirements.txt* and you can find the rest of them in the yaml file instructions.
 
 # Data
 The data was collected during task4. As described in task4, the images were downloaded in AWS S3 bucket and the labels are included in the images’s names whose format is as follows:<br/>
