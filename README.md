@@ -7,7 +7,7 @@ As an input this model should take a video sequence from CCTV camera; As an outp
 # Requirements
 To be able to install Fastai on Valohai, part of the requirements could be found in *requirements.txt* and you can find the rest of them in the yaml file instructions.
 
-For a normal environment Fastai setup: (Or visite https://docs.fast.ai/install.html )
+For a normal environment Fastai setup: (Or visit https://docs.fast.ai/install.html )
 ```sh
 pip install torch
 pip install fastai
