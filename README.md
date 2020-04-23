@@ -73,7 +73,7 @@ To test the performance of the model we run the model on images not included in 
 ## Prediction on images
 You can make predictions on images following these steps:
 1. Download *WeatherRoad_EvaluationDataset.zip* from [here](https://drive.google.com/open?id=1MDuIcb1pNqmTAYhkhY_5IegAgPL0dnkH) and extract it to the root folder. (Use road folder for the testing)
-2. Download Model weights from [here](https://drive.google.com/open?id=1LcW1wH_Pq99LD4IPMqow0DjVVFk-lPwn) and put it in the *models* folder in the root folder.
+2. Download Model weights from [here](https://drive.google.com/open?id=1LcW1wH_Pq99LD4IPMqow0DjVVFk-lPwn) and put it in the **models** folder in the root folder.
 3. In the root folder create the output directory **output_road_torch**.
 4. From the root folder execute:
     ```sh
@@ -104,9 +104,13 @@ Predictions metrics calculated on the test dataset:
 </p>
 
 ## Prediction on video
-You can predict on video using *predict_video_tf.py* script:
+You can make predictions on video following these steps:
+1. Download the test video **test_video.mp4** from [here]() and put it in the root folder.
+2. Download Model weights from [here](https://drive.google.com/open?id=1LcW1wH_Pq99LD4IPMqow0DjVVFk-lPwn) and put it in the **models** folder in the root folder.
+3. In the root folder create the output directory **output_road_torch**.
+4. From the root folder execute:
 ```sh
-python3 predict_video_torch.py --model ./models/pytorch/road_model.pt --weights  ./models/pytorch/weights_road.pth --input ./test_video.mp4 --labels ./road_labels.json --output ./output_torch/road_conditions.avi --size 1
+python3 predict_video_torch.py --model ./models/pytorch/road_model.pt --weights  ./models/pytorch/weights_road.pth --input ./test_video.mp4 --labels ./road_labels.json --output ./output_road_torch/road_conditions.avi --size 1
 ```
 Where:
 * **'model'**: the path of the training model.
