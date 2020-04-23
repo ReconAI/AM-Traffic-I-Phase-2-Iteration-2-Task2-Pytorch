@@ -130,8 +130,7 @@ Conversion of the built pytorch model to ONNX model to TensorRT model.
 * torch~=1.4.0
 ## Installation
 ```sh
-pip3 install onnx
-pip3 install onnx2keras
+python3.6 -m pip install -r trt_requirements.txt
 git clone https://github.com/onnx/onnx-tensorflow.git
 cd onnx-tensorflow
 sudo python3 setup.py install
